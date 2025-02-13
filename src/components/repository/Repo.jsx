@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Error404 from "../error/Error404";
+import Loading from "../loading/Loading";
 import axios from "axios";
 
 const Repo = () => {
@@ -32,9 +33,7 @@ const Repo = () => {
 
     if (loading) {
         return (
-            <div className="h-full flex justify-center items-center text-xl text-gray-500">
-                Loading...
-            </div>
+            <Loading/>
         );
     }
 

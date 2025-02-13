@@ -47,12 +47,12 @@ const Routes = () => {
             element: <SignUp/>
         },
         {
-            path: "/:username",
-            element: <Profile/>
-        },
-        {
             path: "/settings",
             element: <Settings />
+        },
+        {
+            path: "/:username",
+            element: <Profile />
         },
         {
             path: "/repo/create",
